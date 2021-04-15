@@ -1,7 +1,7 @@
-% Interaction
+%Interaction
 suggest(S) :- write('What is your personality type?: '),read(P),write('How is your mood?: '),read(M), song(S,_,M,P).
 
-% Happy Songs
+%HappySongs
 song('https://www.youtube.com/watch?v=c8YIlU_30Kk',jazz,M,P):- M = happy ,(P= (entj) ; P=(enfj) ; P=(enfp)),!.
 song('https://www.youtube.com/watch?v=SsZRci3sA4I',classical,M,P):- M = happy ,(P= (entj) ; P=(intj) ; P=(entp) ; P=(infj)),!.
 song('https://www.youtube.com/watch?v=XYk2kt8K6E0',electronica,M,P):- M = happy ,(P= (entj) ; P=(estp) ; P=(enfp)),!.
@@ -19,7 +19,7 @@ song('https://www.youtube.com/watch?v=X7ses5rI5U4',soul,M,P):- M = happy ,(P= (e
 song('https://www.youtube.com/watch?v=NKzyyxvNiFc',country,M,P):- M = happy ,(P= (esfj)),!.
 song('https://www.youtube.com/watch?v=oWQpQW95Ru8',reggae,M,P):- M = happy ,(P= (isfp)),!.
 
-% Sad Songs
+%SadSongs
 song('https://www.youtube.com/watch?v=McxPJ3RYY4Y',jazz,M,P):- M = sad ,(P= (entj) ; P=(enfj) ; P=(enfp)),!.
 song('https://www.youtube.com/watch?v=R6OElQVVlLo',classical,M,P):- M = sad ,(P= (entj) ; P=(intj) ; P=(entp) ; P=(infj)),!.
 song('https://www.youtube.com/watch?v=ilTbMVG5t6M',electronica,M,P):- M = sad ,(P= (entj) ; P=(estp) ; P=(enfp)),!.
@@ -36,4 +36,3 @@ song('https://www.youtube.com/watch?v=0pZmHnj3-jQ',hip_hop,M,P):- M = sad ,(P= (
 song('https://www.youtube.com/watch?v=KVIwQFEyZQE',soul,M,P):- M = sad ,(P= (esfj)),!.
 song('https://www.youtube.com/watch?v=ygxmpkHgaC8',country,M,P):- M = sad ,(P= (esfj)),!.
 song('https://www.youtube.com/watch?v=FqQjAUB6DJY',reggae,M,P):- M = sad ,(P= (isfp)),!.
-
